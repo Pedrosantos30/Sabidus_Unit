@@ -1,7 +1,7 @@
 const express = require("express")
 const { criarUsuario, listarUsuarios, atualizarUsuario, deletarUsuario, loginUsuario, obterUsuario } = require("../controladores/usuarioControlador")
 const { criarPost, listarPost, deletarPost, likePost } = require("../controladores/postControlador")
-const { criarComentario, likeComentario } = require("../controladores/comentarioControlador")
+const { criarComentario, listarComentario, likeComentario } = require("../controladores/comentarioControlador")
 const router = express.Router()
 
 // Cadastro e Login
@@ -30,7 +30,8 @@ router.post("/posts/:postId/like", likePost)
 
 router.post("/posts/:postId/comentarios", criarComentario)
 
-router.post("/comentario/:comentarioId/like", likeComentario)
+
+router.post("/posts/:postId/comentarios/:comentarioId/like", likeComentario)
 
 
 

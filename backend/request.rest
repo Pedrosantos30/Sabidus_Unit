@@ -60,10 +60,10 @@ POST http://localhost:5000/usuarios/posts
 Content-Type: application/json
 
 {
-  "alunoId": "671f814e1db330c70b3adebc", 
+  "alunoId": "67241d7dca748411e52964d4", 
   "categoria": "Tecnologia",
-  "titulo": "Pessoal vocês ja tiveram aula de teste ?",
-  "conteudo": "Estou em dúvida, porque ouvi falar que um professor que chegou para substituir Jhonatan não fez um bom trabalho."
+  "titulo": "Ola, boa noite.",
+  "conteudo": "Amanha será feriado"
   
 }
 
@@ -89,36 +89,35 @@ Content-Type: application/json
 
 // Dar like e ao mesmo tempo remover like do post
 ###
-POST http://localhost:5000/usuarios/posts/672aab97e1fd27d07519dc27/like 
+POST http://localhost:5000/usuarios/posts/67302ee47da6408bac5e5f01/like 
 Content-Type: application/json
 
 {
-  "userId": "67241d7dca748411e52964d4"
+  "userId": "671a63383b8c4cd56090cca6"
 }
 
 
 
 // Criar comentario
 ###
-POST http://localhost:5000/usuarios/posts/672aab97e1fd27d07519dc27/comentarios
+POST http://localhost:5000/usuarios/posts/67302ee47da6408bac5e5f01/comentarios
 Content-Type: application/json
 
  
 {
-  "usuarioId": "671a63383b8c4cd56090cca6",
-  "conteudo": "Praticamente não tivemos foi horrível, uma loucura."
+  "usuarioId": "67267a28f5451bcf445bac3c",
+  "conteudo": "Ainda bem."
 }
 
 
 
 
-// Dar like e ao mesmo tempo remover like do comentario
+// Dar like e ao mesmo tempo remover like do comentário
 ###
-POST http://localhost:5000/usuarios/comentario/672d804e4ed9492e433e62f0/like 
+POST http://localhost:5000/usuarios/posts/67302ee47da6408bac5e5f01/comentarios/67302f1d7da6408bac5e5f07/like
 Content-Type: application/json
 
 {
-  "userId": "67241d7dca748411e52964d4"
+  "usuarioId": "671a63383b8c4cd56090cca6"
 }
 
- 
