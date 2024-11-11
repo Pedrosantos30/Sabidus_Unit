@@ -60,10 +60,10 @@ POST http://localhost:5000/usuarios/posts
 Content-Type: application/json
 
 {
-  "alunoId": "67241d7dca748411e52964d4", 
-  "categoria": "Tecnologia",
-  "titulo": "Ola, boa noite.",
-  "conteudo": "Amanha será feriado"
+  "alunoId": "", 
+  "categoria": "",
+  "titulo": "",
+  "conteudo": ""
   
 }
 
@@ -93,7 +93,7 @@ POST http://localhost:5000/usuarios/posts/67302ee47da6408bac5e5f01/like
 Content-Type: application/json
 
 {
-  "userId": "671a63383b8c4cd56090cca6"
+  "userId": ""
 }
 
 
@@ -105,8 +105,8 @@ Content-Type: application/json
 
  
 {
-  "usuarioId": "67267a28f5451bcf445bac3c",
-  "conteudo": "Ainda bem."
+  "usuarioId": "",
+  "conteudo": ""
 }
 
 
@@ -118,6 +118,6 @@ POST http://localhost:5000/usuarios/posts/67302ee47da6408bac5e5f01/comentarios/6
 Content-Type: application/json
 
 {
-  "usuarioId": "671a63383b8c4cd56090cca6"
+  "usuarioId": ""
 }
 
